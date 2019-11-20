@@ -1,13 +1,15 @@
 {
-  "name": "goit-react-hw-01-components",
+  "name": "goit-react-hw-01-component",
   "version": "0.1.0",
-  "private": true,
   "homepage": "./",
+  "private": true,
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "jss": "^10.0.0",
+    "jss-preset-default": "^10.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
