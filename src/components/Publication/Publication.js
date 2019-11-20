@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Publication.module.css';
+import T from 'prop-types';
+import publicationStyles from './Publication.module.css';
 
 const Publication = ({ currentPublic, currentPublicTitle }) => {
   return (
     <>
-      <article className={styles.publication}>
+      <article className={publicationStyles.publication}>
         <h2>{currentPublicTitle}</h2>
         <p>{currentPublic}</p>
       </article>
@@ -15,6 +15,6 @@ const Publication = ({ currentPublic, currentPublicTitle }) => {
 
 export default Publication;
 Publication.propTypes = {
-  currentPublic: PropTypes.string.isRequired,
-  currentPublicTitle: PropTypes.string.isRequired,
+  currentPublic: T.string.isRequired,
+  currentPublicTitle: T.string.isRequired,
 };

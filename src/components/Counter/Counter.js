@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './Counter.module.css';
+import T from 'prop-types';
+import counterStyle from './Counter.module.css';
 
 const Counter = ({ activeIndex, maxIndex }) => {
   return (
     <>
-      <p className={styles.counter}>
+      <p className={counterStyle.counter}>
         {activeIndex}/{maxIndex}
       </p>
     </>
@@ -15,6 +15,6 @@ const Counter = ({ activeIndex, maxIndex }) => {
 export default Counter;
 
 Counter.propTypes = {
-  activeIndex: PropTypes.number.isRequired,
-  maxIndex: PropTypes.number.isRequired,
+  activeIndex: T.number.isRequired,
+  maxIndex: T.number.isRequired,
 };

@@ -11,7 +11,7 @@ const Controls = ({
   return (
     <>
       <div className={controlsStyle.reader}>
-        <section className={controlsStyle.controls}>
+        <section className={controlsStyle.buttonSelector}>
           <button
             disabled={buttonPrevActive}
             onClick={onDecrement}
@@ -22,7 +22,7 @@ const Controls = ({
                 : controlsStyle.button
             }
           >
-            Назад
+            Back
           </button>
           <button
             disabled={buttonNextActive}
@@ -34,7 +34,7 @@ const Controls = ({
                 : controlsStyle.button
             }
           >
-            Вперед
+            Forward
           </button>
         </section>
       </div>
